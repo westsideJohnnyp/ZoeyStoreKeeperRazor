@@ -1,0 +1,49 @@
+ 
+
+
+<!-- ############### FAQS ################### -->
+<div class="faqsa content-center bg-secondary mg corner-2  ">
+    <div class="flex all ">
+
+
+        <div class=" pd   hf fsz-714    ">
+            <h2 class=""> F.A.qs</h2>
+
+
+            <div class="grid gap colm-2  pdy  mgl-2   ">
+
+                @foreach(var faq in faqs){
+                     <div class="faq @(faq.Opened?"active":"") wx-3" @onclick="faq.Toggle">
+                        <div>
+                            <div class="questions  align-justify  ">
+                                <h1>@faq.Title<span class="mdi mdi-arrow-bottom-left-bold-box"></span>
+                                </h1>
+
+                            </div>
+                        </div>
+
+                        <div class="Answer">
+                            <p class="pd fsz-17 "> @faq.Description</p>
+                        </div>
+                        <hr>
+                    </div>
+                }
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <!-- <div class="">
+            <h1>Got more Questions? Email Us or check on our telegram group to get inform
+                from our video made for you.
+            </h1>
+        </div> -->
+
+</div>
+
+
+<!-- END  -->
